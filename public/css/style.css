@@ -1,0 +1,306 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #EAC926;;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-size: 12px;
+    background-color: #ebebeb;;
+}
+
+main{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h3 {
+    font-size: 24px;
+}
+
+nav ul {
+    margin:10px 0px;
+}
+
+.compra-cuotas{
+    text-align: center;
+}
+
+header .banner img {
+    width: 100%;
+}
+
+.burger-menu{
+    text-align: center;
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    background-color: #1259c3;;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+header nav div i {
+    color: #fff;
+    margin: auto;
+}
+
+footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+
+footer ul li p{
+    width: 60vw;
+    margin-bottom: 10px;
+    margin:auto;
+    font-weight: bold;
+}
+
+footer ul li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .copy{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer ul li div i{
+    font-size: 2em;
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+
+
+main div .productos{
+    margin:10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+main div article .icono-carro{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div article .icono-carro i{
+    color: #39b54a;
+    font-size: 1.3em;
+}
+
+main div article .productos-descripcion{
+    display: flex;
+    border-top: 1px solid #ebebeb;
+    background-color: #fff;
+    padding: 15px;
+    width: 100%;
+    flex-direction: column;
+}
+
+main div article .productos-descripcion .descuento {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+main div article .productos-descripcion .precio{
+    font-size: 18px;
+}
+
+main div article .productos-descripcion .descripciones{
+    font-size: 16px;
+    padding-top: 25px;
+}
+.register{
+    margin: auto;
+}
+
+.register .title-register{
+    margin-bottom: 20px;
+}
+
+.register form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 10vh auto;
+    background-color: #fff;
+    border-radius: 4%;
+}
+
+.register form label{
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 50vw;
+}
+.register form label input{
+    margin: 7px;
+}
+
+.register form .button-send-reset button{
+    margin: 10px 15px;
+}
+
+.register form .button-send button{
+    margin: 10px 15px;
+}
+
+.login{
+    margin: auto;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 10vh auto;
+    background-color: #fff;
+    border-radius: 4%;
+}
+
+.login form label{
+    margin:15px 0px;
+    text-align: center;
+}
+
+
+/*resolucion menor*/
+@media screen and (max-width: 480px){
+
+header nav ul{
+    display: none;
+}
+
+}
+
+/*resolucion mayor*/
+@media screen and (min-width: 481px){
+header nav .burger-menu{
+    display: none;
+}
+
+header .banner img {
+    width: 100%;
+    height: 35vh;
+}
+
+main .productos div .descripciones{
+    display: none;
+}
+
+main .productos:hover div .descripciones{
+    display: block;
+}
+
+main div article .icono-carro:hover{
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+
+
+main div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+main div article{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    padding: 5px;
+    
+}
+
+main div article:hover{
+    box-shadow: 2px 1px 18px -1px rgba(0,0,0,0.3);
+}
+
+main div article img{
+    width: 100%;
+}
+
+.login form button:hover {
+    background-color: #0022AA;
+}
+
+footer {
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul li{
+    flex-direction: column;
+}
+footer ul li p{
+    width: 25vw;
+    font-weight: bold;
+}
+
+footer ul li:hover div i{
+    color: #EAC926;
+}
+
+footer .copy{
+    margin: 30px 0px;
+    font-weight: bold;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ header nav ul {
+    display: flex;
+    width: 30vw;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 5px;
+}
+
+header .form{
+    display: inline;
+    text-align: right;
+    margin-right: 17vw;
+}
+}
